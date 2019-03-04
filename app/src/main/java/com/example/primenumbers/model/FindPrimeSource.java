@@ -1,6 +1,7 @@
 package com.example.primenumbers.model;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -28,7 +29,7 @@ public class FindPrimeSource  implements DataSource {
                 }
             }
         }
-        List<Integer> primeNumbers = new LinkedList<>();
+        List<Integer> primeNumbers = new ArrayList<>();
         for (int i = 2; i <= n; i++) {
             if (prime[i]) {
                 primeNumbers.add(i);
